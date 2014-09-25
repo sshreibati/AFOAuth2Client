@@ -8,14 +8,14 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/AFNetworking/AFOAuth2Client.git', :tag => '0.2.0' }
   s.requires_arc = true
 
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.8'
 
   s.source_files = 'AFOAuth2Client'
 
   s.ios.frameworks = 'Security'
 
-  s.dependency 'AFNetworking', '~> 2.0.0'
+  s.dependency 'AFNetworking', '~> 2.1.0'
 
   s.prefix_header_contents = <<-EOS
 #ifdef __OBJC__
